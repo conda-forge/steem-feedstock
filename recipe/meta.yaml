@@ -13,9 +13,11 @@ source:
   sha256: {{ sha256|lower }}
   patches:
     - Pipfile.lock.patch
+    - cli.py.patch
+    - steemd.py.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
