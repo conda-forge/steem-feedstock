@@ -1,6 +1,6 @@
 {% set name = "steem" %}
-{% set version = "0.18.103" %}
-{% set sha256 = "215A3A0E87151428AB71AB13FBEAB353F1FFF3F1A3EB082C5A4D3B2C7581D5D5" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "c9ba0db870c0ae8d89f324584ca931ca9a35a5d69112101d6cfad35c199b42c3" %}
 
 
 package:
@@ -17,7 +17,7 @@ source:
     - steemd.py.patch
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py<36]
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
