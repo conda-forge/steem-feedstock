@@ -16,9 +16,9 @@ build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
-    - piston = steem.cli:legacy
-    - steempy = steem.cli:legacy
-    - steemtail = steem.cli:legacy
+    - piston = steem.cli:legacyentry
+    - steempy = steem.cli:legacyentry
+    - steemtail = steem.cli:steemtailentry
 
 requirements:
   build:
