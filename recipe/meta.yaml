@@ -33,6 +33,7 @@ requirements:
     - pypandoc
     - pytest-pylint
     - pep8
+    - twine
 
   run:
     - python
@@ -53,7 +54,6 @@ requirements:
     - funcy
     - requests
     - future
-    - futures
 
 test:
   imports:
