@@ -49,14 +49,9 @@ requirements:
     - langdetect
     - prettytable
     - voluptuous
-    - chardet
-    - pytz
-    - pytzdata
     - ujson
     - funcy
-    - dateparser
     - requests
-    - diff-match-patch
     - future
     - futures
 
