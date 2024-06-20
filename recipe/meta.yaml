@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - piston = steem.cli:legacyentry
@@ -21,7 +21,7 @@ build:
     - steemtail = steem.cli:steemtailentry
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - sphinx
@@ -90,8 +90,6 @@ test:
     - steembase.types
 
   commands:
-    - conda inspect linkages -p $PREFIX steem  # [not win]
-    - conda inspect objects -p $PREFIX steem   # [osx]
     - steemtail --help
     - steempy --help
     - piston --help
